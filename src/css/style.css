@@ -1,76 +1,82 @@
+:root{ 
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+--shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
 .container{
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  background-color: hsl(30, 38%, 92%);
-  box-sizing: border-box;
+  background-color: var(--White);
 }
-.itens{
+.sections{
   display: flex;
-  width: 560px;
-  height: 400px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+  width: 620px;
+  box-shadow: var(--shadow);
+  border-radius: 10px;
 }
-.produto{
-  width:280px;
-  box-sizing: border-box;
+.post-image{
+  width: 310px;
 }
-.produto .perfume{
+.image-product{
   width: 100%;
   height: 100%;
   border-radius: 10px 0px 0px 10px;
 }
-.descricao-produto{
+.post-description{
   display: flex;
-  flex-flow: row wrap;
-  width: 280px;
+  flex-wrap: wrap;
+  width: 310px;
   padding: 30px;
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 0px 10px 10px 0px;
+  border-radius: 0px 10px 50px 0px;
   box-sizing: border-box;
 }
-.descricao-produto .secao{
+.post-description .title-product{
   font-family: 'Hanken Grotesk', sans-serif;
   font-weight: 700;
   color: hsla(228, 12%, 48%, 80%);
   text-transform: uppercase;
-  font-size: 12px;
-  letter-spacing: 4px;
-  margin-bottom: 10px;
+  font-size: 14px;
+  letter-spacing: 5px;
+  height: 6px;
 }
-.descricao-produto .titulo{
+.post-description .name-product{
   font-family: 'Fraunces', serif;
   font-weight: 700;
-  font-size: 30px;
+  font-size: 33px;
   line-height: 30px;
-  color: hsl(212, 21%, 14%);
-  flex-basis: 190px;
-
+  color: var(--Very-dark-blue);
+  flex-basis: 200px;
+  height: 80px;
 }
-.descricao-produto .descricao{
-  font-family: 'Hanken Grotesk', sans-serif;
-  font-weight: 700;
-  color: hsla(228, 12%, 48%, 80%);
-  font-size: 14px;
-  line-height: 20px;
-  flex-basis: 300px;
+.post-description .description-product{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  color: var(--Dark-grayish-blue);
+  font-size: 15px;
+  line-height: 25px;
+  flex-basis: 240px;
+  height: 70px;
 }
-.valores{
+.values{
   display: flex;
   align-items: center;
   margin-bottom: 20px;
 }
-.valores .desconto{
+.values .price{
   display: inline-block;
   font-family: 'Fraunces', serif;
-  font-size: 28px;
-  color: hsl(158, 36%, 37%);
-  margin-right: 17px;
+  font-size: 33px;
+  color: var(--Dark-cyan);
+  margin-right: 20px;
 }
-.valores .valor-total{
-  display: inline-block;
- font-family: 'Hanken Grotesk', sans-serif;
+.values .old-price{
+ display: inline-block;
+ font-family: 'Montserrat', sans-serif;
  font-weight: 500;
  color: hsla(228, 12%, 48%, 80%);
  text-decoration: line-through;
@@ -81,11 +87,9 @@
   justify-content: center;
   align-items: center;
   flex-basis: 300px;
-  padding: 5px;
   border: none;
-  background-color:hsl(158, 36%, 37%);
+  background-color: var(--Dark-cyan);
   border-radius: 10px;
-  box-sizing: border-box;
   cursor: pointer;
   transition: 0.5s;
 }
@@ -93,14 +97,16 @@
   background-color: hsl(157, 29%, 23%);
 }
 .cart .text{
-  font-family: 'Hanken Grotesk', sans-serif;
-  color: hsl(0, 0%, 100%);
-  margin-left: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--White);
+  margin-left: 15px;
 }
 
 .attribution {
     position: relative;
-    bottom: 70px;
+    bottom: 20px;
     font-size: 11px;
     text-align: center;
   }
@@ -113,44 +119,44 @@
     justify-content: flex-start;
     flex-direction: column;
   }
-  .itens{
+  .sections{
     flex-direction: column;
     margin-top: 30px;
-    width: 350px;
+    width: 370px;
   }
-  .produto{
-    width: 350px;
+  .post-image{
+    width: 370px;
   }
-  .produto .perfume{
+  #main-image {
+    content: url(/src/images/image-product-mobile.jpg);
     border-radius: 10px 10px 0px 0px;
-    }
-    .descricao-produto{
-      width: 350px;
-      padding: 20px;
-      border-radius: 0px 0px 10px 10px;
-    }
-    .descricao-produto .secao{
-      font-size: 14px;
-    }
-    .descricao-produto .titulo{
-      flex-basis: 260px;
-      margin-bottom: 17px;
-    
-    }
-    .descricao-produto .descricao{
-      font-size: 15px;
-      flex-basis: 280px;
-      margin-bottom: 20px;
-    }
-    .valores .desconto{
-      font-size: 33px;
-    }
-    .cart{
-      padding: 13px;
-    }
-    .cart .text{
-      font-size: 16px;
-    }
+  } 
+  .post-description{
+    flex-direction: column;
+    width: 350px;
+    padding-bottom: 25px;
+  }
+  .post-description .title-product{
+    height: 30px;
+  }
+  .post-description .name-product{
+    flex-basis: 75px;
+  }
+  .post-description .description-product{
+    flex-basis: 115px;
+    width: 315px;
+  }
+  .cart{
+    flex-basis: 50px
+  }
+}
+@media (max-width:375px){
+  .attribution {
+    position: relative;
+    bottom: 10px;
+    font-size: 11px;
+    text-align: center;
+  }
 }
 /* 
 FONT FRAUNCES
