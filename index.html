@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -8,16 +8,18 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="src/images/favicon-32x32.png"
+      href=".src/images/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="src/css/style.css" />
-    <link rel="stylesheet" href="src/css/reset.css" />
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="/src/css/reset.css" />
 
     <title>Frontend Mentor | Product preview card component</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700&family=Montserrat:wght@800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Hanken+Grotesk:wght@500;700&family=Montserrat:wght@400;500;800&display=swap"
       rel="stylesheet"
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,44 +31,42 @@
   </head>
   <body>
     <div class="container">
-      <div class="itens">
-        <section class="produto">
-          <picture>
-            <source
-              media="(orientation: portrait)"
-              srcset="src/images/image-product-mobile.jpg"
-            />
-            <img
-              src="src/images/image-product-desktop.jpg"
-              alt="Produto"
-              class="perfume"
-            />
-          </picture>
+      <div class="sections">
+        <section class="post-image">
+          <img
+            src="/src/images/image-product-desktop.jpg"
+            alt="Image of a perfume"
+            class="image-product"
+            id="main-image"
+          />
         </section>
-        <section class="descricao-produto">
-          <p class="secao">Perfume</p>
-          <h1 class="titulo">Gabrielle Essence Eau De Parfum</h1>
-          <p class="descricao">
+        <section class="post-description">
+          <p class="title-product">Perfume</p>
+          <h1 class="name-product">Gabrielle Essence Eau De Parfum</h1>
+          <p class="description-product">
             A floral, solar and voluptuous interpretation composed by Olivier
             Polge, Perfumer-Creator for the House of CHANEL.
           </p>
-          <div class="valores">
-            <span class="desconto">$149.99</span>
-            <span class="valor-total">$169.99</span>
+          <div class="values">
+            <span class="price">$149.99</span>
+            <span class="old-price">$169.99</span>
           </div>
           <button class="cart">
-            <img src="src/images/icon-cart.svg" alt="Carrinho de Compras" />
+            <img
+              src="/src/images/icon-cart.svg"
+              alt="Icon of a shopping cart"
+            />
             <p class="text">Add to Cart</p>
           </button>
         </section>
-        </div>
-     
       </div>
-         <div class="attribution">
-          Challenge by
-          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-            >Frontend Mentor</a
-          >. Coded by <a href="https://github.com/Leonardo-Marcilino" target="_blank"> Leonardo Marcilino</a>.
-      </div>
+    </div>
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href=""> Leonardo Marcilino</a>.
+    </footer>
   </body>
 </html>
+
