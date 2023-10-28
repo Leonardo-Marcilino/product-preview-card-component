@@ -99,7 +99,7 @@
 .cart .text{
   font-family: 'Montserrat', sans-serif;
   font-size: 13px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--White);
   margin-left: 15px;
 }
@@ -152,6 +152,7 @@
   .cart{
     flex-basis: 50px
   }
+  
 }
 @media (max-width:375px){
   .attribution {
