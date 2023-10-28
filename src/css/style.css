@@ -11,16 +11,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--White);
+  background-color: var(--Cream);
 }
 .sections{
   display: flex;
-  width: 620px;
+  width: 600px;
   box-shadow: var(--shadow);
   border-radius: 10px;
 }
 .post-image{
-  width: 310px;
+  width: 300px;
 }
 .image-product{
   width: 100%;
@@ -30,7 +30,7 @@
 .post-description{
   display: flex;
   flex-wrap: wrap;
-  width: 310px;
+  width: 300px;
   padding: 30px;
   border-radius: 0px 10px 50px 0px;
   box-sizing: border-box;
@@ -65,7 +65,7 @@
 .values{
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .values .price{
   display: inline-block;
@@ -145,6 +145,9 @@
   .post-description .description-product{
     flex-basis: 115px;
     width: 315px;
+  }
+  .values{
+    margin-bottom: 20px;
   }
   .cart{
     flex-basis: 50px
